@@ -13,7 +13,8 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -26,8 +27,11 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="./boostrap.min.css" rel="stylesheet">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
     <!-- Custom Stylesheet -->
     <link href="./style.css" rel="stylesheet">
@@ -35,195 +39,278 @@
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
     </div>
     <!-- Spinner End -->
 
-
-
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary fixed-top p-0" id="navbar">
-        <a href="index.html" class="navbar-brand bg-primary d-flex align-items-center px-2">
-          <h2 class="mb-2 text-white small-title">Marvellous Maritime Services Limited</h2>
-          <img src="./IMAGE-MARIT (2)_prev_ui.png" alt="Logo" class="ms-2" style="width: 50px; height: auto;">
-        </a>
-      
-        <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon btn-lg"></span>
-          </button>
-      
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav ms-auto p-4 p-lg-0">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="about.html" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="service.html" class="nav-link">Services</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-              <ul class="dropdown-menu">
-                <li><a href="Clients.html" class="dropdown-item">Our Clients</a></li>
-                <li><a href="feature.html" class="dropdown-item">Features</a></li>
-                <li><a href="quote.html" class="dropdown-item">Free Quote</a></li>
-                <li><a href="team.html" class="dropdown-item">Our Team</a></li>
-                <li><a href="testimonial.html" class="dropdown-item">Testimonial</a></li>
-                <li><a href="404.html" class="dropdown-item">404 Page</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="nav-link">Contact</a>
-            </li>
-          </ul>
-      
-          <h4 class="m-0 pe-lg-5 d-none d-lg-block"><i class="fa fa-headphones text-primary me-3"></i>+234 8033593447</h4>
-          <h4 class="m-0 pe-lg-5 d-none d-lg-block"><i class="fa fa-headphones text-primary me-3"></i>+234 9043975517</h4>
+    <label for="slidebar-active" id="overlay" onclick="show()"></label>
+    <nav class="nav-bar">
+      <div class="nav_brand">
+        <div class="brand">
+          <span>
+            <span class="main_brand" style="color: white; font-weight: bold;">Marvellous Maritime</span>
+            <span class="sub_brand" style="color: white; font-weight: bold;">Services Limited</span>
+            <span
+              ><img src="./IMAGE-MARIT (2)_prev_ui.png" alt="" width="32px"
+            /></span>
+          </span>
         </div>
-      </nav>
-    
-    
-    
-    
-    
+        <div class="t">
+          <input type="checkbox" id="slidebar-active" />
+          <label
+            for="slidebar-active"
+            class="open-slidbar_btn"
+            id="open"
+            onclick="show()"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="32px"
+              viewBox="0 -960 960 960"
+              width="32px"
+              fill="#5f6368"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+          </label>
+        </div>
+      </div>
+      <div class="nav_links">
+        <label
+          for="slidebar-active"
+          class="open-slidbar_btn"
+          onclick="show()"
+          id="close"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32px"
+            viewBox="0 -960 960 960"
+            width="32px"
+            fill="#5f6368"
+          >
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            /></svg
+        ></label>
+
+        <a href="./index.html" class="a">Home</a>
+        <a href="./about.html" class="a">About</a>
+        <a href="./service.html" class="a">Services</a>
+        <!-- <a href="#"> -->
+        <div class="dropdown a">
+          <span class="dropdown-text a">Pages</span>
+          <div class="dropdown-content">
+            <ul class="" type="none">
+              <li>
+                <a href="Clients.html" class="dropdown-item">Our Clients</a>
+              </li>
+              <li>
+                <a href="feature.html" class="dropdown-item">Features</a>
+              </li>
+              <li>
+                <a href="quote.html" class="dropdown-item">Free Quote</a>
+              </li>
+              <li><a href="team.html" class="dropdown-item">Our Team</a></li>
+              <li>
+                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+              </li>
+              <li><a href="404.html" class="dropdown-item">404 Page</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- </a> -->
+        <a href="./contact.html" class="a">Contact</a>
+        <a href="#" class="phone a">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#5f6368"
+          >
+            <path
+              d="M360-120H200q-33 0-56.5-23.5T120-200v-280q0-75 28.5-140.5t77-114q48.5-48.5 114-77T480-840q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480v280q0 33-23.5 56.5T760-120H600v-320h160v-40q0-117-81.5-198.5T480-760q-117 0-198.5 81.5T200-480v40h160v320Zm-80-240h-80v160h80v-160Zm400 0v160h80v-160h-80Zm-400 0h-80 80Zm400 0h80-80Z"
+            /></svg
+          >+234 8033593447</a
+        >
+        <a href="#" class="phone ph a">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="24px"
+            viewBox="0 -960 960 960"
+            width="24px"
+            fill="#5f6368"
+          >
+            <path
+              d="M360-120H200q-33 0-56.5-23.5T120-200v-280q0-75 28.5-140.5t77-114q48.5-48.5 114-77T480-840q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480v280q0 33-23.5 56.5T760-120H600v-320h160v-40q0-117-81.5-198.5T480-760q-117 0-198.5 81.5T200-480v40h160v320Zm-80-240h-80v160h80v-160Zm400 0v160h80v-160h-80Zm-400 0h-80 80Zm400 0h80-80Z"
+            /></svg
+          >+234 9057515927</a
+        >
+      </div>
+    </nav>
+
+
+
+
+
     <!-- Navbar End -->
 
 
     <!-- Carousel Start -->
-<div class="container-fluid p-0 pb-5">
-    <div class="owl-carousel header-carousel position-relative mb-5">
-        <!-- First Carousel Item -->
-        <div class="owl-carousel-item position-relative">
-            <img class="img-fluid" src="./img/carousel-1.jpg" alt="">
-            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(6, 3, 21, .5);">
-                <div class="container">
-                    <div class="row justify-content-start">
-                        <div class="col-10 col-lg-8">
-                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Transport & Logistics Solution</h5>
-                            <h1 class="display-3 text-white animated slideInDown mb-4">Best Place For Your <span class="text-primary">Logistics</span> Solution</h1>
-                            <p class="fs-5 fw-medium text-white mb-4 pb-2">Marvellous Maritime Services Limited: Delivering global shipping solutions with reliability and efficiency.</p>
-                            <!-- Button to trigger the More Information Modal -->
-                            <button type="button" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft" data-bs-toggle="modal" data-bs-target="#readMoreModal1">Read More</button>
-                            <!-- Button to trigger the Free Quote Modal -->
-                            <button type="button" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight" data-bs-toggle="modal" data-bs-target="#freeQuoteModal">Free Quote</button>
+    <div class="container-fluid p-0 pb-5">
+        <div class="owl-carousel header-carousel position-relative mb-5">
+            <!-- First Carousel Item -->
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="./img/carousel-1.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(6, 3, 21, .5);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Transport & Logistics
+                                    Solution</h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Best Place For Your <span
+                                        class="text-primary">Logistics</span> Solution</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Marvellous Maritime Services Limited: We
+                                    provide maritime logistics solutions.</p>
+                                <!-- Button to trigger the More Information Modal -->
+                                <button type="button" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
+                                    data-bs-toggle="modal" data-bs-target="#readMoreModal1">Read More</button>
+                                <!-- Button to trigger the Free Quote Modal -->
+                                <button type="button" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight"
+                                    data-bs-toggle="modal" data-bs-target="#freeQuoteModal">Free Quote</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Carousel Item -->
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="./img/carousel-2.jpg" alt="">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(6, 3, 21, .5);">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-10 col-lg-8">
+                                <h5 class="text-white text-uppercase mb-3 animated slideInDown">Transport & Logistics
+                                    Solution</h5>
+                                <h1 class="display-3 text-white animated slideInDown mb-4">Best Place For Your <span
+                                        class="text-primary">Transport</span> Solution</h1>
+                                <p class="fs-5 fw-medium text-white mb-4 pb-2">Marvellous Maritime Services Limited:
+                                    Delivering global shipping solutions with reliability and efficiency.</p>
+                                <!-- Button to trigger the More Information Modal -->
+                                <button type="button" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
+                                    data-bs-toggle="modal" data-bs-target="#readMoreModal2">Read More</button>
+                                <!-- Button to trigger the Free Quote Modal -->
+                                <button type="button" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight"
+                                    data-bs-toggle="modal" data-bs-target="#freeQuoteModal">Free Quote</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <!-- Carousel End -->
 
-        <!-- Second Carousel Item -->
-        <div class="owl-carousel-item position-relative">
-            <img class="img-fluid" src="./img/carousel-2.jpg" alt="">
-            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(6, 3, 21, .5);">
-                <div class="container">
-                    <div class="row justify-content-start">
-                        <div class="col-10 col-lg-8">
-                            <h5 class="text-white text-uppercase mb-3 animated slideInDown">Transport & Logistics Solution</h5>
-                            <h1 class="display-3 text-white animated slideInDown mb-4">Best Place For Your <span class="text-primary">Transport</span> Solution</h1>
-                            <p class="fs-5 fw-medium text-white mb-4 pb-2">Marvellous Maritime Services Limited: Delivering global shipping solutions with reliability and efficiency.</p>
-                            <!-- Button to trigger the More Information Modal -->
-                            <button type="button" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft" data-bs-toggle="modal" data-bs-target="#readMoreModal2">Read More</button>
-                            <!-- Button to trigger the Free Quote Modal -->
-                            <button type="button" class="btn btn-secondary py-md-3 px-md-5 animated slideInRight" data-bs-toggle="modal" data-bs-target="#freeQuoteModal">Free Quote</button>
-                        </div>
-                    </div>
+    <!-- More Information Modal 1 -->
+    <div class="modal fade" id="readMoreModal1" tabindex="-1" aria-labelledby="readMoreModalLabel1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="readMoreModalLabel1">More Information</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p> our quote: here is a detailed statutory quote by marvellous maritime services limited to our
+                        customer. It outlines the costs and services involved in transporting goods from one location to
+                        another. the shipping quote typically includes the following elements:
+
+                        npa tariffs , nimasa tariffs, customs tariffs
+
+                        <li>npa tariffs </li>
+                        <li>nimasa tariffs,.</li>
+                        <li>customs tariffs </li>
+                        there are more operational expenses , The operations expenses varies depending on the operation
+
+                        Additional Services: Such as packaging, warehousing, or special handling.
+                        fill the quote form , for more details on the listed statutory quote.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Carousel End -->
 
-<!-- More Information Modal 1 -->
-<div class="modal fade" id="readMoreModal1" tabindex="-1" aria-labelledby="readMoreModalLabel1" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="readMoreModalLabel1">More Information</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p> our quote:   here   is a detailed statutory quote  by marvellous maritime services limited  to our  customer. It outlines the costs and services involved in transporting goods from one location to another. the shipping quote typically includes the following elements:
-
-                    npa tariffs  , nimasa tariffs, customs tariffs         
-
-                   <li>npa tariffs </li>
-                   <li>nimasa tariffs,.</li> 
-                   <li>customs tariffs </li>
-                   
-                    Additional Services: Such as packaging, warehousing, or special handling.  
-                     fill the quote form , for more details on the listed statutory quote.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <!-- More Information Modal 2 -->
+    <div class="modal fade" id="readMoreModal2" tabindex="-1" aria-labelledby="readMoreModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="readMoreModalLabel2">More Information</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>We provide the best transport solutions for your business. Whether it’s logistics or freight, we
+                        are here to assist with efficient transport...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- More Information Modal 2 -->
-<div class="modal fade" id="readMoreModal2" tabindex="-1" aria-labelledby="readMoreModalLabel2" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="readMoreModalLabel2">More Information</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>We provide the best transport solutions for your business. Whether it’s logistics or freight, we are here to assist with efficient transport...</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <!-- Free Quote Modal -->
+    <div class="modal fade" id="freeQuoteModal" tabindex="-1" aria-labelledby="freeQuoteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="freeQuoteModalLabel">Free Quote</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="service" class="form-label">Service Needed</label>
+                            <select class="form-select" id="service" required>
+                                <option selected>Choose a service...</option>
+                                <option value="1">Logistics</option>
+                                <option value="2">Transport</option>
+                                <option value="3">Freight Forwarding</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="details" class="form-label">Details</label>
+                            <textarea class="form-control" id="details" rows="3" required></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Submit Quote Request</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
-<!-- Free Quote Modal -->
-<div class="modal fade" id="freeQuoteModal" tabindex="-1" aria-labelledby="freeQuoteModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="freeQuoteModalLabel">Free Quote</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="service" class="form-label">Service Needed</label>
-                        <select class="form-select" id="service" required>
-                            <option selected>Choose a service...</option>
-                            <option value="1">Logistics</option>
-                            <option value="2">Transport</option>
-                            <option value="3">Freight Forwarding</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="details" class="form-label">Details</label>
-                        <textarea class="form-control" id="details" rows="3" required></textarea>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary">Submit Quote Request</button>
-            </div>
-        </div>
-    </div>
-</div>
 
     <!-- Carousel End -->
 
@@ -234,30 +321,44 @@
             <div class="row g-5 mx-lg-0">
                 <div class="col-lg-6 ps-lg-0 wow fadeInLeft" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="./img/about.jpg" style="object-fit: cover;" alt="">
+                        <img class="position-absolute img-fluid w-100 h-100"
+                            src="./img/Gemini_Generated_Image_mcwhtmmcwhtmmcwh.jpeg" style="object-fit: cover;" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 about-text wow fadeInUp" data-wow-delay="0.3s">
                     <h6 class="text-secondary text-uppercase mb-3">About Us</h6>
-                    <h1 class="mb-5">Quick Transport and Logistics Solutions</h1>
-                    <p class="mb-5">At Marvellous Maritime Services Limited, we specialize in providing seamless transport and logistics services. Our commitment to reliability, safety, and timely delivery sets us apart in the industry. Whether you're shipping locally or globally, we ensure your cargo reaches its destination with utmost care and precision.</p>
+                    <h1 class="mb-5">Maritime Transport and Logistics Solutions</h1>
+                    <p class="mb-5">At Marvellous Maritime Services Limited, we specialize in providing seamless
+                        transport and logistics services. Our commitment to reliability, safety, and timely delivery
+                        sets us apart in the industry. Whether you're shipping locally or globally, we ensure your cargo
+                        reaches its destination with utmost care and precision.</p>
                     <div class="row g-4 mb-5">
-                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
-                            <i class="fa fa-globe fa-3x text-primary mb-3"></i>
-                            <h5>Global Coverage</h5>
-                            <p class="m-0">
-                                With extensive global coverage and expert knowledge of local markets, we offer customized solutions tailored to your shipping needs. From maritime shipping to full logistics management, we handle every step of the process, making your experience smooth and hassle-free.</p>
-                        </div>
-                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
-                            <i class="fa fa-shipping-fast fa-3x text-primary mb-3"></i>
-                            <h5>On Time Delivery</h5>
-                            <p class="m-0"> Our dedicated team ensures that your cargo is delivered safely and on schedule, no matter the destination. With advanced tracking systems and efficient logistics planning, we guarantee reliable, timely delivery every time..</p>
-                        </div>
                     </div>
+                    <p class="mb-5">Our Mission: To provide excellent quality and value-adding energy products at
+                        competitive prices to all stakeholders, using global best practices in protecting the
+                        environment and providing value-adding services to our clients.</p>
                     <a href="" class="btn btn-primary py-3 px-5">Explore More</a>
                 </div>
+                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                    <i class="fa fa-globe fa-3x text-primary mb-3"></i>
+                    <h5>Global Coverage</h5>
+                    <p class="m-0">
+                        With extensive global coverage and expert knowledge of local markets, we offer customized
+                        solutions tailored to your shipping needs. From maritime shipping to full logistics management,
+                        we handle every step of the process, making your experience smooth and hassle-free.</p>
+                </div>
+                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                    <i class="fa fa-shipping-fast fa-3x text-primary mb-3"></i>
+                    <h5>On Time Delivery</h5>
+                    <p class="m-0"> Our dedicated team ensures that your cargo is delivered safely and on schedule, no
+                        matter the destination. With advanced tracking systems and efficient logistics planning, we
+                        guarantee reliable, timely delivery every time..</p>
+                </div>
             </div>
+            <a href="" class="btn btn-primary py-3 px-5">Explore More</a>
         </div>
+    </div>
+    </div>
     </div>
     <!-- About End -->
 
@@ -269,13 +370,16 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <h6 class="text-secondary text-uppercase mb-3">Some Facts</h6>
                     <h1 class="mb-5">Best Place To Manage All Of Your Shipments</h1>
-                    <p class="mb-5">we offer an all-in-one solution for managing your shipments with ease and efficiency. From real-time tracking to seamless coordination, we handle every aspect of the shipping process. Trust us to simplify your logistics, providing you with complete control and peace of mind, whether you're shipping locally or across the globe.</p>
+                    <p class="mb-5">we offer an all-in-one solution for managing your shipments with ease and
+                        efficiency. From real-time tracking to seamless coordination, we handle every aspect of the
+                        shipping process. Trust us to simplify your logistics, providing you with complete control and
+                        peace of mind, whether you're shipping locally or across the globe.</p>
                     <div class="d-flex align-items-center">
                         <i class="fa fa-headphones fa-2x flex-shrink-0 bg-primary p-3 text-white"></i>
                         <div class="ps-4">
                             <h6>Call for any query!</h6>
                             <h3 class="text-primary m-0">+234 8033593447</h3>
-                            <h3 class="text-primary m-0">+234 9043975517</h3>
+                            <h3 class="text-primary m-0">+234 9057515927</h3>
                         </div>
                     </div>
                 </div>
@@ -308,303 +412,344 @@
     <!-- Fact End -->
 
 
+
     <!-- Service Start -->
-   
-<!-- Services Section -->
-<div class="container-xxl py-5">
-    <div class="container py-5">
-        <div class="text-center">
-            <h6 class="text-secondary text-uppercase">Our Services</h6>
-            <h1 class="mb-5">Explore Our Services</h1>
-        </div>
-        <div class="row g-4">
-            <!-- Service 1 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="service-item p-4">
-                    <div class="overflow-hidden mb-4">
-                        <img class="img-fluid" src="./img/service-1.jpg" alt="Service Image 1">
-                    </div>
-                    <h4 class="mb-3">Shipping Agency</h4>
-                    <p>A shipping agency handles the operational and procedural requirements for a commercial vessel’s call at a port.</p>
-                    <!-- Button to trigger modal -->
-                    <a class="fa fa-arrow-right text-primary" href="#" data-bs-toggle="modal" data-bs-target="#serviceModal1">
-                        <i class="fa fa-arrow-right"></i><span>Read More</span>
-                      </a>
-                </div>
-            </div>
 
-            <!-- Service 2 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="service-item p-4">
-                    <div class="overflow-hidden mb-4">
-                        <img class="img-fluid" src="./img/service-2.jpg" alt="Service Image 2">
-                    </div>
-                    <h4 class="mb-3">Protective Agency</h4>
-                    <p>Protective agencies safeguard the interests of ship owners and operators during port calls.</p>
-                    <!-- Button to trigger modal -->
-                    <a class="fa fa-arrow-right text-primary" href="#" data-bs-toggle="modal" data-bs-target="#serviceModal2">
-                        <i class="fa fa-arrow-right"></i><span>Read More</span>
-                      </a>
-                </div>
+    <!-- Services Section -->
+    <div class="container-xxl py-5">
+        <div class="container py-5">
+            <div class="text-center">
+                <h6 class="text-secondary text-uppercase">Our Services</h6>
+                <h1 class="mb-5">Explore Our Services</h1>
             </div>
+            <div class="row g-4">
+                <!-- Service 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="./img/download.jpeg" alt="Service Image 1" >
+                        </div>
+                        <h4 class="mb-3">Shipping Agency</h4>
+                        <p>A shipping agency handles the operational and procedural requirements for a commercial
+                            vessel’s call at a port.</p>
+                        <!-- Button to trigger modal -->
+                        <a class="fa fa-arrow-right text-primary" href="#" data-bs-toggle="modal"
+                            data-bs-target="#serviceModal1">
+                            <i class="fa fa-arrow-right"></i><span>Read More</span>
+                        </a>
+                    </div>
+                </div>
 
-            <!-- Service 3 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="service-item p-4">
-                    <div class="overflow-hidden mb-4">
-                        <img class="img-fluid" src="./img/service-3.jpg" alt="Service Image 3">
+                <!-- Service 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="./img/protective1.jpg" alt="Service Image 2">
+                        </div>
+                        <h4 class="mb-3">Protective Agency</h4>
+                        <p>Protective agencies safeguard the interests of ship owners and operators during port calls.
+                        </p>
+                        <!-- Button to trigger modal -->
+                        <a class="fa fa-arrow-right text-primary" href="#" data-bs-toggle="modal"
+                            data-bs-target="#serviceModal2">
+                            <i class="fa fa-arrow-right"></i><span>Read More</span>
+                        </a>
                     </div>
-                    <h4 class="mb-3">Ship Chandling</h4>
-                    <p>Ship chandlers provide essential supplies and services to ships, including food provisions, repairs</p>
-                    <!-- Button to trigger modal -->
-                    <a class="fa fa-arrow-right text-primary" href="#" data-bs-toggle="modal" data-bs-target="#serviceModal3">
-                        <i class="fa fa-arrow-right"></i><span>Read More</span>
-                      </a>
                 </div>
-            </div>
-            <!-- Service 4 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="service-item p-4">
-                    <div class="overflow-hidden mb-4">
-                        <img class="img-fluid" src="./img/service-4.jpg" alt="Service Image 3">
-                    </div>
-                    <h4 class="mb-3">Ship Husbanding</h4>
-                    <p>Ship husbanding involves managing the affairs of a ship while in port, including customs formalities,</p>
-                    <!-- Button to trigger modal -->
-                    <a class="fa fa-arrow-right text-primary" href="#" data-bs-toggle="modal" data-bs-target="#serviceModal4">
-                        <i class="fa fa-arrow-right"></i><span>Read More</span>
-                      </a>
-                </div>
-            </div>
-            <!-- Service 5 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="service-item p-4">
-                    <div class="overflow-hidden mb-4">
-                        <img class="img-fluid" src="./img/service-5.jpg" alt="Service Image 3">
-                    </div>
-                    <h4 class="mb-3">Vessel Brokerage</h4>
-                    <p>Vessel brokerage services involve acting as intermediaries between shipowners and charterers</p>
-                    <!-- Button to trigger modal -->
-                    <a class="fa fa-arrow-right text-primary" href="#" data-bs-toggle="modal" data-bs-target="#serviceModal5">
-                        <i class="fa fa-arrow-right"></i><span>Read More</span>
-                      </a>
-                </div>
-            </div>
-            <!-- Service 6 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="service-item p-4">
-                    <div class="overflow-hidden mb-4">
-                        <img class="img-fluid" src="./img/wide-angle-shot-several-ships-water-mountain-cloudy-sky.jpg" alt="Service Image 3">
-                    </div>
-                    <h4 class="mb-3">Bunkering Services</h4>
-                    <p>Bunkering services provide fuel for ships, ensuring that vessels have the necessary fuel to complete their voyages.</p>
-                    <!-- Button to trigger modal -->
-                    <a class="fa fa-arrow-right text-primary" href="#" data-bs-toggle="modal" data-bs-target="#serviceModal6">
-                        <i class="fa fa-arrow-right"></i><span>Read More</span>
-                      </a>
-                </div>
-            </div>
-            <!-- Service 7 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="service-item p-4">
-                    <div class="overflow-hidden mb-4">
-                        <img class="img-fluid" src="./img/moment-captured-migration-crisis-with-people.jpg" alt="Service Image 3">
-                    </div>
-                    <h4 class="mb-3">Ship Crew Security</h4>
-                    <p>Ship crew security services ensure the safety and security of the crew on board.</p>
-                    <!-- Button to trigger modal -->
-                    <a class="fa fa-arrow-right text-primary" href="#" data-bs-toggle="modal" data-bs-target="#serviceModal7">
-                        <i class="fa fa-arrow-right"></i><span>Read More</span>
-                      </a>
-                </div>
-            </div>
-            <!-- Service 8 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="service-item p-4">
-                    <div class="overflow-hidden mb-4">
-                        <img class="img-fluid" src="./img/service-5.jpg" height="30vh" alt="Service Image 3">
-                    </div>
-                    <h4 class="mb-3">Freight Fowarding</h4>
-                    <p>Freight forwarding involves organizing the shipment of goods from one place to another.</p>
-                    <!-- Button to trigger modal -->
-                    <a class="fa fa-arrow-right text-primary" href="#" data-bs-toggle="modal" data-bs-target="#serviceModal8">
-                        <i class="fa fa-arrow-right"></i><span>Read More</span>
-                      </a>
-                </div>
-            </div>
-            <!-- Service 9 -->
-            <div class="col-md-6 col-lg-4">
-                <div class="service-item p-4">
-                    <div class="overflow-hidden mb-4">
-                        <img class="img-fluid" src="./img/dubai-creek.jpg" height="30vh" alt="Service Image 3">
-                    </div>
-                    <h4 class="mb-3">Service Boat Agency</h4>
-                    <p>Service boat agencies provide support vessels for various maritime operations, including crew transfers, </p>
-                    <!-- Button to trigger modal -->
-                    <a class="fa fa-arrow-right text-primary" href="#" data-bs-toggle="modal" data-bs-target="#serviceModal9">
-                        <i class="fa fa-arrow-right"></i><span>Read More</span>
-                      </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- Modal 1: Shipping Agency -->
-<div class="modal fade" id="serviceModal1" tabindex="-1" aria-labelledby="serviceModalLabel1" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="serviceModalLabel1">Shipping Agency</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>A shipping agency handles the operational and procedural requirements for a commercial vessel’s call at a port. This includes cargo handling, emergency calls, repairs, crew changes, and ship demolition. Shipping agencies ensure smooth and efficient port operations, protecting the interests of ship owners and charterers1.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <!-- Service 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="./img/ship chand.jpg" alt="Service Image 3">
+                        </div>
+                        <h4 class="mb-3">Ship Chandling</h4>
+                        <p>Ship chandlers provide essential supplies and services to ships, including food provisions,
+                            repairs</p>
+                        <!-- Button to trigger modal -->
+                        <a class="fa fa-arrow-right text-primary" href="#" data-bs-toggle="modal"
+                            data-bs-target="#serviceModal3">
+                            <i class="fa fa-arrow-right"></i><span>Read More</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="./img/ship husbanding.jpg" alt="Service Image 3">
+                        </div>
+                        <h4 class="mb-3">Ship Husbanding</h4>
+                        <p>Ship husbanding involves managing the affairs of a ship while in port, including customs
+                            formalities,</p>
+                        <!-- Button to trigger modal -->
+                        <a class="fa fa-arrow-right text-primary" href="#" data-bs-toggle="modal"
+                            data-bs-target="#serviceModal4">
+                            <i class="fa fa-arrow-right"></i><span>Read More</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="./img/service-5.jpg" alt="Service Image 3">
+                        </div>
+                        <h4 class="mb-3">Vessel Brokerage</h4>
+                        <p>Vessel brokerage services involve acting as intermediaries between shipowners and charterers
+                        </p>
+                        <!-- Button to trigger modal -->
+                        <a class="fa fa-arrow-right text-primary" href="#" data-bs-toggle="modal"
+                            data-bs-target="#serviceModal5">
+                            <i class="fa fa-arrow-right"></i><span>Read More</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid"
+                                src="./img/wide-angle-shot-several-ships-water-mountain-cloudy-sky.jpg"
+                                alt="Service Image 3">
+                        </div>
+                        <h4 class="mb-3">Bunkering Services</h4>
+                        <p>Bunkering services provide fuel for ships, ensuring that vessels have the necessary fuel to
+                            complete their voyages.</p>
+                        <!-- Button to trigger modal -->
+                        <a class="fa fa-arrow-right text-primary" href="#" data-bs-toggle="modal"
+                            data-bs-target="#serviceModal6">
+                            <i class="fa fa-arrow-right"></i><span>Read More</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 7 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="./img/moment-captured-migration-crisis-with-people.jpg"
+                                alt="Service Image 3">
+                        </div>
+                        <h4 class="mb-3">Ship Crew Security</h4>
+                        <p>Ship crew security services ensure the safety and security of the crew on board.</p>
+                        <!-- Button to trigger modal -->
+                        <a class="fa fa-arrow-right text-primary" href="#" data-bs-toggle="modal"
+                            data-bs-target="#serviceModal7">
+                            <i class="fa fa-arrow-right"></i><span>Read More</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 8 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="./img/SHIPPING AGENCY.jpg" height="30vh" alt="Service Image 3">
+                        </div>
+                        <h4 class="mb-3">Freight Fowarding</h4>
+                        <p>Freight forwarding involves organizing the shipment of goods from one place to another.</p>
+                        <!-- Button to trigger modal -->
+                        <a class="fa fa-arrow-right text-primary" href="#" data-bs-toggle="modal"
+                            data-bs-target="#serviceModal8">
+                            <i class="fa fa-arrow-right"></i><span>Read More</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Service 9 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-item p-4">
+                        <div class="overflow-hidden mb-4">
+                            <img class="img-fluid" src="./img/sssss.jpeg" height="30vh" alt="Service Image 3">
+                        </div>
+                        <h4 class="mb-3">Service Boat Agency</h4>
+                        <p>Service boat agencies provide support vessels for various maritime operations, including crew
+                            transfers, </p>
+                        <!-- Button to trigger modal -->
+                        <a class="fa fa-arrow-right text-primary" href="#" data-bs-toggle="modal"
+                            data-bs-target="#serviceModal9">
+                            <i class="fa fa-arrow-right"></i><span>Read More</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- Modal 2: Protective Agency -->
-<div class="modal fade" id="serviceModal2" tabindex="-1" aria-labelledby="serviceModalLabel2" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="serviceModalLabel2">Protective Agency</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>More details about Protective Agency services. We ensure that your assets are fully protected...Protective agencies safeguard the interests of ship owners and operators during port calls. They supervise the charterer’s agency function, monitor port call operations, and ensure compliance with local regulations.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <!-- Modal 1: Shipping Agency -->
+    <div class="modal fade" id="serviceModal1" tabindex="-1" aria-labelledby="serviceModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceModalLabel1">Shipping Agency</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>A shipping agency handles the operational and procedural requirements for a commercial vessel’s
+                        call at a port. This includes cargo handling, emergency calls, repairs, crew changes, and ship
+                        demolition. Shipping agencies ensure smooth and efficient port operations, protecting the
+                        interests of ship owners and charterers1.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- Modal 3: Ship Chandling -->
-<div class="modal fade" id="serviceModal3" tabindex="-1" aria-labelledby="serviceModalLabel3" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="serviceModalLabel3">Ship Chandling</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Ship chandlers provide essential supplies and services to ships, including food provisions, repairs, spare parts, safety inspections, and medical supplies.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Modal 4: Ship Chandling -->
-<div class="modal fade" id="serviceModal4" tabindex="-1" aria-labelledby="serviceModalLabel4" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="serviceModalLabel4">Ship Husbanding</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Ship husbanding involves managing the affairs of a ship while in port, including customs formalities, fueling, supplies, repairs, and crew requirements. Husbanding agents ensure that all needs are met efficiently, allowing for minimal time spent in port and optimized operational efficiency56.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <!-- Modal 2: Protective Agency -->
+    <div class="modal fade" id="serviceModal2" tabindex="-1" aria-labelledby="serviceModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceModalLabel2">Protective Agency</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>More details about Protective Agency services. We ensure that your assets are fully
+                        protected...Protective agencies safeguard the interests of ship owners and operators during port
+                        calls. They supervise the charterer’s agency function, monitor port call operations, and ensure
+                        compliance with local regulations.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Modal 5: Ship Chandling -->
-<div class="modal fade" id="serviceModal5" tabindex="-1" aria-labelledby="serviceModalLabel5" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="serviceModalLabel5">Vessel Brokerage</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Vessel brokerage services involve acting as intermediaries between shipowners and charterers or buyers and sellers of vessels. Brokers facilitate the sale and purchase of ships, negotiate charter agreements, and provide market intelligence to help clients make informed decisions</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Modal 6: Ship Chandling -->
-<div class="modal fade" id="serviceModal6" tabindex="-1" aria-labelledby="serviceModalLabel6" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="serviceModalLabel6">Bunkering Services</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Bunkering services provide fuel for ships, ensuring that vessels have the necessary fuel to complete their voyages. This includes the supply of different types of marine fuels, such as IFO, MGO, and MDO, as well as lubricants and other related services</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+    <!-- Modal 3: Ship Chandling -->
+    <div class="modal fade" id="serviceModal3" tabindex="-1" aria-labelledby="serviceModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceModalLabel3">Ship Chandling</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Ship chandlers provide essential supplies and services to ships, including food provisions,
+                        repairs, spare parts, safety inspections, and medical supplies.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Modal 7: Ship Chandling -->
-<div class="modal fade" id="serviceModal7" tabindex="-1" aria-labelledby="serviceModalLabel7" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="serviceModalLabel7">Ship Crew Security</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Ship crew security services ensure the safety and security of the crew on board. This includes providing security personnel, implementing safety protocols, and ensuring compliance with international maritime security regulations to protect against piracy and other threats2.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Modal 8: Ship Chandling -->
-<div class="modal fade" id="serviceModal8" tabindex="-1" aria-labelledby="serviceModalLabel8" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="serviceModalLabel8">Freight Fowarding</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Freight forwarding involves organizing the shipment of goods from one place to another. Freight forwarders handle all logistics, including transportation, customs clearance, and documentation, ensuring that goods are delivered efficiently and on time9.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <!-- Modal 4: Ship Chandling -->
+    <div class="modal fade" id="serviceModal4" tabindex="-1" aria-labelledby="serviceModalLabel4" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceModalLabel4">Ship Husbanding</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Ship husbanding involves managing the affairs of a ship while in port, including customs
+                        formalities, fueling, supplies, repairs, and crew requirements. Husbanding agents ensure that
+                        all needs are met efficiently, allowing for minimal time spent in port and optimized operational
+                        efficiency56.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Modal 9: Ship Chandling -->
-<div class="modal fade" id="serviceModal9" tabindex="-1" aria-labelledby="serviceModalLabel9" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="serviceModalLabel9">Service Boat Agency</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <p>Service boat agencies provide support vessels for various maritime operations, including crew transfers, supply deliveries, and emergency response. These agencies ensure that support services are available when needed, enhancing the efficiency and safety of maritime operations5.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    <!-- Modal 5: Ship Chandling -->
+    <div class="modal fade" id="serviceModal5" tabindex="-1" aria-labelledby="serviceModalLabel5" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceModalLabel5">Vessel Brokerage</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Vessel brokerage services involve acting as intermediaries between shipowners and charterers or
+                        buyers and sellers of vessels. Brokers facilitate the sale and purchase of ships, negotiate
+                        charter agreements, and provide market intelligence to help clients make informed decisions</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
+    <!-- Modal 6: Ship Chandling -->
+    <div class="modal fade" id="serviceModal6" tabindex="-1" aria-labelledby="serviceModalLabel6" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceModalLabel6">Bunkering Services</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Bunkering services provide fuel for ships, ensuring that vessels have the necessary fuel to
+                        complete their voyages. This includes the supply of different types of marine fuels, such as
+                        IFO, MGO, and MDO, as well as lubricants and other related services</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 7: Ship Chandling -->
+    <div class="modal fade" id="serviceModal7" tabindex="-1" aria-labelledby="serviceModalLabel7" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceModalLabel7">Ship Crew Security</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Ship crew security services ensure the safety and security of the crew on board. This includes
+                        providing security personnel, implementing safety protocols, and ensuring compliance with
+                        international maritime security regulations to protect against piracy and other threats2.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 8: Ship Chandling -->
+    <div class="modal fade" id="serviceModal8" tabindex="-1" aria-labelledby="serviceModalLabel8" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceModalLabel8">Freight Fowarding</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Freight forwarding involves organizing the shipment of goods from one place to another. Freight
+                        forwarders handle all logistics, including transportation, customs clearance, and documentation,
+                        ensuring that goods are delivered efficiently and on time9.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 9: Ship Chandling -->
+    <div class="modal fade" id="serviceModal9" tabindex="-1" aria-labelledby="serviceModalLabel9" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="serviceModalLabel9">Service Boat Agency</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Service boat agencies provide support vessels for various maritime operations, including crew
+                        transfers, supply deliveries, and emergency response. These agencies ensure that support
+                        services are available when needed, enhancing the efficiency and safety of maritime operations5.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Service End -->
 
 
@@ -619,14 +764,22 @@
                         <i class="fa fa-globe text-primary fa-3x flex-shrink-0"></i>
                         <div class="ms-4">
                             <h5>Worldwide Service</h5>
-                            <p class="mb-0">Marvellous Maritime Services Limited delivers global shipping solutions, ensuring your cargo reaches any destination efficiently and securely. With an extensive international network and expertise in global logistics, we provide seamless service across borders, tailored to meet your unique shipping needs, wherever you are in the world.</p>
+                            <p class="mb-0">Marvellous Maritime Services Limited delivers global shipping solutions,
+                                ensuring your cargo reaches any destination efficiently and securely. With an extensive
+                                international network and expertise in global logistics, we provide seamless service
+                                across borders, tailored to meet your unique shipping needs, wherever you are in the
+                                world.</p>
                         </div>
                     </div>
                     <div class="d-flex mb-5 wow fadeIn" data-wow-delay="0.5s">
                         <i class="fa fa-shipping-fast text-primary fa-3x flex-shrink-0"></i>
                         <div class="ms-4">
                             <h5>On Time Delivery</h5>
-                            <p class="mb-0">At Marvellous Maritime Services Limited, we understand that timing is crucial in the shipping industry. Our team is dedicated to delivering your goods promptly and efficiently, ensuring they arrive at their destination on schedule. With our reliable network and precise logistics, we guarantee timely deliveries every time.</p>
+                            <p class="mb-0">At Marvellous Maritime Services Limited, we understand that timing is
+                                crucial in the shipping industry. Our team is dedicated to delivering your goods
+                                promptly and efficiently, ensuring they arrive at their destination on schedule. With
+                                our reliable network and precise logistics, we guarantee timely deliveries every time.
+                            </p>
                         </div>
                     </div>
                     <div class="d-flex mb-0 wow fadeInUp" data-wow-delay="0.7s">
@@ -634,13 +787,17 @@
                         <div class="ms-4">
                             <h5>24/7 Telephone Support</h5>
                             <p class="mb-0">
-                                At Marvellous Maritime Services Limited, we're always here for you. Our dedicated support team is available 24/7 to assist with any inquiries, updates, or issues. Whether it's day or night, you can count on us for prompt and reliable customer service whenever you need it.</p>
+                                At Marvellous Maritime Services Limited, we're always here for you. Our dedicated
+                                support team is available 24/7 to assist with any inquiries, updates, or issues. Whether
+                                it's day or night, you can count on us for prompt and reliable customer service whenever
+                                you need it.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6 pe-lg-0 wow fadeInRight" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="./img/feature.jpg" style="object-fit: cover;" alt="">
+                        <img class="position-absolute img-fluid w-100 h-100" src="./img/feature.jpg"
+                            style="object-fit: cover;" alt="">
                     </div>
                 </div>
             </div>
@@ -709,7 +866,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- clients End -->
 
 
@@ -720,13 +877,14 @@
                 <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
                     <h6 class="text-secondary text-uppercase mb-3">Get A Quote</h6>
                     <h1 class="mb-5">Request A Free Qoute!</h1>
-                    <p class="mb-5">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
+                    <p class="mb-5">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
+                        eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
                     <div class="d-flex align-items-center">
                         <i class="fa fa-headphones fa-2x flex-shrink-0 bg-primary p-3 text-white"></i>
                         <div class="ps-4">
-                            <h6>Call for any query!</h6> 
+                            <h6>Call for any query!</h6>
                             <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+234 8033593447</p>
-                            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+234 9043975517</p>
+                            <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+234 9057515927</p>
                         </div>
                     </div>
                 </div>
@@ -735,13 +893,16 @@
                         <form>
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                                    <input type="text" class="form-control border-0" placeholder="Your Name"
+                                        style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
+                                    <input type="email" class="form-control border-0" placeholder="Your Email"
+                                        style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Mobile" style="height: 55px;">
+                                    <input type="text" class="form-control border-0" placeholder="Your Mobile"
+                                        style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <select class="form-select border-0" style="height: 55px;">
@@ -778,16 +939,15 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item p-4">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="./img/team-1.jpg" alt="">
+                            <img class="img-fluid" src="./img/inaede helen.jpg" alt=""  style=" height: 33vh;">
                         </div>
-                        <h5 class="mb-0">Full Name</h5>
-                        <p>Designation</p>
-                        <div class="btn-slide mt-1">
+                        <h5 class="mb-0">INAEDE HELEN</h5>
+                        <p>MANAGING DIRECTOR</p>
+                        <div class="btn-slide mt-1 btn-primary">
                             <i class="fa fa-share"></i>
-                            <span>
-                                <a href=""><i class="fab fa-facebook-f"></i></a>
-                                <a href=""><i class="fab fa-twitter"></i></a>
-                                <a href=""><i class="fab fa-instagram"></i></a>
+                            <span class="text-primary">
+                                <a href="+234 8033593447"><i class="fa Phone">+234 8033593447</i></a>
+                            
                             </span>
                         </div>
                     </div>
@@ -795,16 +955,15 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item p-4">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="./img/team-2.jpg" alt="">
+                            <img class="img-fluid" src="./img/obi ezenwa.jpg" alt="">
                         </div>
-                        <h5 class="mb-0">Full Name</h5>
-                        <p>Designation</p>
-                        <div class="btn-slide mt-1">
+                        <h5 class="mb-0">OBI EZENWA</h5>
+                        <p>HEAD OF OPERATIONS, WARRI</p>
+                        <div class="btn-slide mt-1 btn-primary">
                             <i class="fa fa-share"></i>
-                            <span>
-                                <a href=""><i class="fab fa-facebook-f"></i></a>
-                                <a href=""><i class="fab fa-twitter"></i></a>
-                                <a href=""><i class="fab fa-instagram"></i></a>
+                            <span class="text-primary">
+                                <a href="+234 7012128298"><i class="fa Phone">+234 7012128298</i></a>
+                              
                             </span>
                         </div>
                     </div>
@@ -812,16 +971,15 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
                     <div class="team-item p-4">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="./img/team-3.jpg" alt="">
+                            <img class="img-fluid" src="./img/catherine adeiza.jpg" alt=""  style=" height: 33vh;">
                         </div>
-                        <h5 class="mb-0">Full Name</h5>
-                        <p>Designation</p>
-                        <div class="btn-slide mt-1">
+                        <h5 class="mb-0">CATHERINE ADEIZA</h5>
+                        <p>GENERAL MANAGER</p>
+                        <div class="btn-slide mt-1 btn-primary">
                             <i class="fa fa-share"></i>
-                            <span>
-                                <a href=""><i class="fab fa-facebook-f"></i></a>
-                                <a href=""><i class="fab fa-twitter"></i></a>
-                                <a href=""><i class="fab fa-instagram"></i></a>
+                            <span class="text-primary">
+                                <a href="+234 818138420591"><i class="fa Phone">+234 818138420591</i></a>
+                            
                             </span>
                         </div>
                     </div>
@@ -829,16 +987,15 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.9s">
                     <div class="team-item p-4">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="./img/team-4.jpg" alt="">
+                            <img class="img-fluid" src="./img/akwonoke christian.jpg" alt="" width="200vw">
                         </div>
-                        <h5 class="mb-0">Full Name</h5>
-                        <p>Designation</p>
-                        <div class="btn-slide mt-1">
+                        <h5 class="mb-0">AKWONOKE CHRISTIAN</h5>
+                        <p>HEAD OF OPERATIONS , LAGOS</p>
+                        <div class="btn-slide mt-1 btn-primary">
                             <i class="fa fa-share"></i>
-                            <span>
-                                <a href=""><i class="fab fa-facebook-f"></i></a>
-                                <a href=""><i class="fab fa-twitter"></i></a>
-                                <a href=""><i class="fab fa-instagram"></i></a>
+                            <span class="text-primary">
+                                <a href="+234 7065290888"><i class="fa Phone">+234 7065290888</i></a>
+                          
                             </span>
                         </div>
                     </div>
@@ -860,46 +1017,54 @@
                 <div class="testimonial-item p-4 my-5">
                     <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
                     <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="./img/testimonial-1.jpg" style="width: 80px; height: 80px;">
+                        <img class="img-fluid flex-shrink-0" src="./img/testimonial-1.jpg"
+                            style="width: 80px; height: 80px;">
                         <div class="ms-4">
                             <h5 class="mb-1">Client Name</h5>
                             <p class="m-0">Profession</p>
                         </div>
                     </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
+                        Clita erat ipsum et lorem et sit.</p>
                 </div>
                 <div class="testimonial-item p-4 my-5">
                     <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
                     <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="./img/testimonial-2.jpg" style="width: 80px; height: 80px;">
+                        <img class="img-fluid flex-shrink-0" src="./img/testimonial-2.jpg"
+                            style="width: 80px; height: 80px;">
                         <div class="ms-4">
                             <h5 class="mb-1">Client Name</h5>
                             <p class="m-0">Profession</p>
                         </div>
                     </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
+                        Clita erat ipsum et lorem et sit.</p>
                 </div>
                 <div class="testimonial-item p-4 my-5">
                     <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
                     <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="./img/testimonial-3.jpg" style="width: 80px; height: 80px;">
+                        <img class="img-fluid flex-shrink-0" src="./img/testimonial-3.jpg"
+                            style="width: 80px; height: 80px;">
                         <div class="ms-4">
                             <h5 class="mb-1">Client Name</h5>
                             <p class="m-0">Profession</p>
                         </div>
                     </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
+                        Clita erat ipsum et lorem et sit.</p>
                 </div>
                 <div class="testimonial-item p-4 my-5">
                     <i class="fa fa-quote-right fa-3x text-light position-absolute top-0 end-0 mt-n3 me-4"></i>
                     <div class="d-flex align-items-end mb-4">
-                        <img class="img-fluid flex-shrink-0" src="./img/testimonial-4.jpg" style="width: 80px; height: 80px;">
+                        <img class="img-fluid flex-shrink-0" src="./img/testimonial-4.jpg"
+                            style="width: 80px; height: 80px;">
                         <div class="ms-4">
                             <h5 class="mb-1">Client Name</h5>
                             <p class="m-0">Profession</p>
                         </div>
                     </div>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
+                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos.
+                        Clita erat ipsum et lorem et sit.</p>
                 </div>
             </div>
         </div>
@@ -908,18 +1073,23 @@
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
+    <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s"
+        style="margin-top: 6rem;">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Address</h4>
                     <h6 class="text-light mb-4">LAGOS OFFICE</h6>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>5 IBIKUNLE , AKINTOYE STR., OPP GENERAL HOSPITAL, APAPA LAGOS.</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>5 IBIKUNLE , AKINTOYE STR., OPP GENERAL
+                        HOSPITAL, APAPA LAGOS.</p>
                     <h6 class="text-light mb-4">WARRI OFFICE</h6>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>24 Free indeed str., Opp General Hospital, Apapa , Lagos</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>
+                        24 free indeed str., off Egini Drive, Ekete Inland, Udu-Warri, Delta State, Nigeria.</p>
                     <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+234 8033593447</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+234 9043975517</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+234 9057515927</p>
                     <p class="mb-2"><i class="fa fa-envelope me-3"></i>HELEN_INAEDE@MARVELLOUSMARITIMELTD.COM</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>Inaedehelen3@gmail.com</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>marvellousmaritime@yahoo.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -950,10 +1120,11 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-light mb-4">Newsletter</h4>
-                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <p>You can subscribe to our news letter</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
                         <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                        <button type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
                     </div>
                 </div>
             </div>
@@ -965,8 +1136,9 @@
                         &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
                     </div>
                     <div class="col-md-6 text-center text-md-end">
-                      
-                        Designed By <a class="border-bottom" href="https://isedebless8.wixsite.com/icom-blessed">icom-technologies</a>
+
+                        Designed By <a class="border-bottom"
+                            href="https://isedebless8.wixsite.com/icom-blessed">icom-technologies</a>
                     </div>
                 </div>
             </div>
@@ -978,7 +1150,7 @@
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-<!-- 
+    <!-- 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> -->
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -992,8 +1164,28 @@
     <!-- Custom JS -->
     <script src="./main.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+        
+    <script>
+        let checkbox = document.getElementById("slidebar-active");
+        let nav_links = document.querySelector(".nav_links");
+        function show(params) {
+          if (checkbox.checked === false) {
+            console.log("Checked");
+            nav_links.classList.add("active");
+          } else {
+            console.log(" NOt Checked");
+            nav_links.classList.remove("active");
+          }
+        }
+      </script>
+
 </body>
+
 </html>
