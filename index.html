@@ -272,44 +272,43 @@
     <!-- Free Quote Modal -->
     <div class="modal fade" id="freeQuoteModal" tabindex="-1" aria-labelledby="freeQuoteModalLabel" aria-hidden="true" action="https://formspree.io/f/mkgwajdq" method="post">
         <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="freeQuoteModalLabel">Free Quote</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" name="button"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="name" class="form-label" name="name">Name</label>
-                            <input type="text" class="form-control" id="name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="service" class="form-label" name="service">Service Needed</label>
-                            <select class="form-select" id="service" required>
-                                <option selected>Choose a service...</option>
-                                <option value="1">Logistics</option>
-                                <option value="2">Transport</option>
-                                <option value="3">Freight Forwarding</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="details" class="form-label" name="details">Details</label>
-                            <textarea class="form-control" id="details" rows="3" required></textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" name="button">Close</button>
-                    <button type="submit" class="btn btn-primary" name="submit">Submit Quote Request</button>
-                </div>
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="freeQuoteModalLabel">Free Quote</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" name="button"></button>
             </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label" name="name">Name</label>
+                  <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="service" class="form-label" name="service">Service Needed</label>
+                  <select class="form-select" id="service" required>
+                    <option selected>Choose a service...</option>
+                    <option value="1">Logistics</option>
+                    <option value="2">Transport</option>
+                    <option value="3">Freight Forwarding</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="details" class="form-label" name="details">Details</label>
+                  <textarea class="form-control" id="details" rows="3" required></textarea>
+                </div>
+                <input type="hidden" name="_subject" value="Quote Request"> </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" name="button">Close</button>
+              <button type="submit" class="btn btn-primary" name="submit">Submit Quote Request</button>
+            </div>
+          </div>
         </div>
-    </div>
-
+      </div>
     <!-- Carousel End -->
 
 
